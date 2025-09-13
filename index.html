@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KRSTUDIO</title>
+    <meta name="description" content="Full Stack Developer and Cyber Security Enthusiast specializing in MERN stack and AI solutions">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+        <div class="loading-logo">Kethan Ayatti</div>
+    </div>
+
+    <!-- Background Animation -->
+    <div class="background-animation" id="backgroundAnimation"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="logo">Kethan Ayatti</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#Education" class="nav-link">Education</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle">
+                <i class="fas fa-moon"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Kethan Ayatti</h1>
+            <p class="hero-subtitle">
+                <span class="typewriter" id="typewriter">Full Stack Developer and Cyber Security Enthusiast</span>
+            </p>
+            <p style="color: var(--text-secondary); margin-bottom: 2rem; font-size: 1.1rem;">
+                BCA Student passionate about creating innovative solutions with cutting-edge technologies
+            </p>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">
+                    <i class="fas fa-code"></i> View My Work
+                </a>
+                <a href="#contact" class="btn btn-secondary">
+                    <i class="fas fa-envelope"></i> Get In Touch
+                </a>
+                <a href="#" class="btn btn-secondary" id="downloadResume">
+                    <i class="fas fa-download"></i> Download Resume
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <h2 class="section-title fade-in">About Me</h2>
+        <div class="about-content">
+            <div class="about-image slide-in-left">
+                <img src="img/WhatsApp Image 2025-03-29 at 10.58.33_199513bc.jpg" alt="John Doe" class="profile-img">
+                <span class="img-float-text">#Developer</span>
+            </div>
+            <div class="about-text slide-in-right">
+                <p>Hello! I'm Kethan , a passionate BCA student specializing in full-stack development and  cyber security. My journey in computer science began with curiosity about how technology can solve real-world problems.</p>
+                
+                <p>I'm proficient in the MERN stack and have experience building scalable web applications. My interest in AI and machine learning , cyber security  drives me to explore innovative solutions that combine traditional software development with cutting-edge AI technologies.</p>
+                
+                <p>When I'm not coding, I enjoy contributing to open-source projects, learning about new technologies, and working on personal projects that challenge my skills and creativity.</p>
+                
+                <p>I'm currently seeking opportunities to apply my skills in a professional environment and contribute to meaningful projects that make a difference.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+    <!-- Floating Background Text -->
+    <div class="floating-text">CODE</div>
+    <div class="floating-text">DEV</div>
+    <div class="floating-text">TECH</div>
+    
+    <h2 class="section-title fade-in">Skills & Technologies</h2>
+            <!-- Simplified skills list -->
+            <div class="skills-list fade-in">
+                <div class="skill">
+                    <div class="skill-header"><span>Advanced Java</span><span>75%</span></div> 
+                    <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-header"><span>C++/C</span><span>95%</span></div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-header"><span>MERN Stack + Socket.IO</span><span>90%</span></div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 88%"></div></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-header"><span>HTML/CSS</span><span>95%</span></div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 95%"></div></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-header"><span>JavaScript</span><span>85%</span></div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                </div>
+                <div class="skill">
+                    <div class="skill-header"><span>SQL Database</span><span>70%</span></div>
+                    <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                </div>
+            </div>
+</section>
+
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <h2 class="section-title fade-in">Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card fade-in">
+                <div class="project-image">
+                   <img src="img/image copy.png" alt="Chat Application">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Chat Application : A platform for community connection</h3>
+                    <p class="project-description">
+                        A real-time chat application with Cloud storage , High-level Security and AI Integration.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">React Vite</span>
+                        <span class="tech-tag">Socket.io</span>
+                        <span class="tech-tag">Node & Express</span>
+                        <span class="tech-tag">MongoDB</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Live Demo</a>
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card fade-in">
+                <div class="project-image">
+                   <img src="img/image.png" alt="AI Powered Chatbot">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">AI Powered Chatbot</h3>
+                    <p class="project-description">
+                        A Natural Language Processing model for chatbot interaction, enabling natural language understanding and response generation.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">TensorFlow</span>
+                        <span class="tech-tag">Rest API</span>
+                        <span class="tech-tag">CNN</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Live Demo</a>
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-card fade-in">
+                <div class="project-image">
+                   <img src="img/image copy 2.png" alt="Cloud Storage Platform">
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Cloud Storage Platform</h3>
+                    <p class="project-description">
+                        A secure cloud storage solution with file sharing, version control, and collaborative editing capabilities.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">AWS S3</span>
+                        <span class="tech-tag">Docker</span>
+                        <span class="tech-tag">Redis</span>
+                    </div>
+                    <div class="project-links">
+                        <a href="#" class="project-link">Live Demo</a>
+                        <a href="#" class="project-link">GitHub</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+   <section id="experience" class="section">
+        <h2 class="section-title fade-in">Experience & Education</h2>
+        <div class="experience-timeline">
+            <div class="timeline-line"></div>
+            
+            <div class="experience-item fade-in">
+                <div class="experience-content">
+                    <div class="experience-date">2023 - Present</div>
+                    <h3 class="experience-title">Bachelor of Computer Applications</h3>
+                    <div class="experience-company">KLE Technological University, BVB Campus - Hubballi</div>
+                    <p>Currently pursuing BCA with specialization in Java, DevOps, Machine Learning, Big Data Analytics, Cloud Computing, and Cyber Security. Active in MERN stack development and real-time application projects.</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+
+            <div class="experience-item fade-in">
+                <div class="experience-content">
+                    <div class="experience-date">2021 - 2023</div>
+                    <h3 class="experience-title">Pre-University Course (PUC)</h3>
+                    <div class="experience-company">KLE College of Commerce</div>
+                    <p>Completed Pre-University education with focus on commerce and mathematics, building foundation for Statistical Analysis and analytical thinking.</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+
+            <div class="experience-item fade-in">
+                <div class="experience-content">
+                    <div class="experience-date">2011 - 2021</div>
+                    <h3 class="experience-title">Secondary Education</h3>
+                    <div class="experience-company">SBIOAES School</div>
+                    <p>Completed schooling with strong academic performance, developed leadership skills and participated in various extracurricular activities including chess competitions.</p>
+                </div>
+                <div class="timeline-dot"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <h2 class="section-title fade-in">Get In Touch</h2>
+        <div class="contact-content">
+            <div class="contact-info fade-in">
+                <h3>Let's Connect</h3>
+                <p style="color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.6;">
+                    I'm always open to discussing new opportunities, interesting projects, or just having a chat about technology. Feel free to reach out!
+                </p>
+                
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <span>kethanayatti333@gmail.com</span>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Hubballi, Karnataka, India</span>
+                </div>
+                
+                <div class="contact-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Available for freelance work</span>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" class="social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="social-link" title="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="social-link" title="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+
+            <form class="contact-form fade-in" id="contactForm">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" name="email" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject">Subject</label>
+                    <input type="text" id="subject" name="subject" class="form-control" required>
+                </div>
+                
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" class="form-control" required placeholder="Tell me about your project or just say hello..."></textarea>
+                </div>
+                
+                <button type="submit" class="submit-btn" id="submitBtn">
+                    <i class="fas fa-paper-plane"></i> Send Message
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Scroll to Top Button -->
+    <button class="scroll-top" id="scrollTop">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Loading Screen
+        window.addEventListener('load', () => {
+            setTimeout(() => {
+                const loadingScreen = document.getElementById('loadingScreen');
+                loadingScreen.style.opacity = '0';
+                setTimeout(() => {
+                    loadingScreen.style.display = 'none';
+                }, 500);
+            }, 2000);
+        });
+
+        // Background Animation
+        function createParticles() {
+            const container = document.getElementById('backgroundAnimation');
+            for (let i = 0; i < 50; i++) {
+                const particle = document.createElement('div');
+                particle.classList.add('particle');
+                particle.style.left = Math.random() * 100 + '%';
+                particle.style.width = Math.random() * 4 + 2 + 'px';
+                particle.style.height = particle.style.width;
+                particle.style.animationDelay = Math.random() * 20 + 's';
+                particle.style.animationDuration = (Math.random() * 20 + 10) + 's';
+                container.appendChild(particle);
+            }
+        }
+        createParticles();
+
+        // Typewriter Effect
+        function typeWriter(element, text, speed = 100) {
+            let i = 0;
+            element.innerHTML = '';
+            const timer = setInterval(() => {
+                if (i < text.length) {
+                    element.innerHTML += text.charAt(i);
+                    i++;
+                } else {
+                    clearInterval(timer);
+                }
+            }, speed);
+        }
+
+        const typewriterElement = document.getElementById('typewriter');
+        const texts = [
+            'Full Stack Developer & ML Engineer',
+            'MERN Stack Specialist',
+            'AI Enthusiast',
+            'Problem Solver'
+        ];
+        let textIndex = 0;
+
+        function startTypewriter() {
+            typeWriter(typewriterElement, texts[textIndex]);
+            textIndex = (textIndex + 1) % texts.length;
+        }
+
+        startTypewriter();
+        setInterval(() => {
+            setTimeout(startTypewriter, 1000);
+        }, 4000);
+
+        // Smooth Scrolling
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Navigation Active State
+        function updateActiveNav() {
+            const sections = document.querySelectorAll('section[id]');
+            const navLinks = document.querySelectorAll('.nav-link');
+            
+            let current = '';
+            sections.forEach(section => {
+                const sectionTop = section.offsetTop - 100;
+                if (window.pageYOffset >= sectionTop) {
+                    current = section.getAttribute('id');
+                }
+            });
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + current) {
+                    link.classList.add('active');
+                }
+            });
+        }
+
+        window.addEventListener('scroll', updateActiveNav);
+
+        // Scroll Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.fade-in, .slide-in-left, .slide-in-right').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Scroll to Top Button
+        const scrollTopBtn = document.getElementById('scrollTop');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollTopBtn.classList.add('visible');
+            } else {
+                scrollTopBtn.classList.remove('visible');
+            }
+        });
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        let isDarkMode = true;
+
+        themeToggle.addEventListener('click', () => {
+            isDarkMode = !isDarkMode;
+            document.body.classList.toggle('light-mode');
+            
+            if (isDarkMode) {
+                themeToggle.innerHTML = '<i class="fas fa-moon"></i>';
+            } else {
+                themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+            }
+        });
+
+        // Initialize EmailJS with your public key
+// Initialize EmailJS (replace with your actual public key from EmailJS dashboard)
+emailjs.init("5dk2A3F9Rxm1b4ij6");
+
+// Contact Form
+const contactForm = document.getElementById('contactForm');
+const submitBtn = document.getElementById('submitBtn');
+
+contactForm.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    
+    // Show loading state
+    submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+    submitBtn.disabled = true;
+
+    // Get form data using your exact field names
+    const templateParams = {
+        name: contactForm.name.value,
+        email: contactForm.email.value, 
+        subject: contactForm.subject.value,
+        message: contactForm.message.value,
+        sent_date: new Date().toLocaleString('en-IN', { 
+            timeZone: 'Asia/Kolkata',
+            dateStyle: 'full',
+            timeStyle: 'short'
+        })
+    };
+
+    try {
+        const result = await emailjs.send(
+            'service_8h9c3hw',    // Replace with your EmailJS service ID
+            'template_gizxt95',   // Replace with your EmailJS template ID  
+            templateParams
+        );
+
+        console.log('Email sent successfully:', result);
+        
+        // Success animation
+        submitBtn.innerHTML = '<i class="fas fa-check"></i> Message Sent!';
+        submitBtn.style.background = 'linear-gradient(135deg, #4CAF50, #45a049)';
+        
+        // Reset form
+        contactForm.reset();
+        
+        // Show success message
+        alert('Thank you for your message! I\'ll get back to you soon.');
+        
+    } catch (error) {
+        console.error('Email sending failed:', error);
+        
+        submitBtn.innerHTML = '<i class="fas fa-exclamation-triangle"></i> Try Again';
+        submitBtn.style.background = 'linear-gradient(135deg, #f44336, #d32f2f)';
+        
+        alert('Sorry, there was an error sending your message. Please try again.');
+    }
+    
+    // Reset button after 3 seconds
+    setTimeout(() => {
+        submitBtn.innerHTML = '<i class="fas fa-paper-plane"></i> Send Message';
+        submitBtn.style.background = 'var(--gradient-primary)';
+        submitBtn.disabled = false;
+    }, 3000);
+});
+
+        // Download Resume
+        const downloadResumeBtn = document.getElementById('downloadResume');
+        downloadResumeBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            
+            // Create a dummy PDF download (replace with actual resume file)
+            const link = document.createElement('a');
+            link.href = 'data:application/pdf;base64,'; // Add your base64 encoded PDF here
+            link.download = 'kethan_Ayatti_Resume.pdf';
+            
+            // Show download animation
+            downloadResumeBtn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Downloading...';
+            
+            setTimeout(() => {
+                downloadResumeBtn.innerHTML = '<i class="fas fa-download"></i> Download Resume';
+                alert('Resume download would start here. Please add your actual resume file.');
+            }, 1500);
+        });
+
+        // Skill Bar Animations
+        function animateSkillBars() {
+            const skillBars = document.querySelectorAll('.skill-progress');
+            skillBars.forEach(bar => {
+                if (bar.getBoundingClientRect().top < window.innerHeight) {
+                    bar.style.animation = 'fillBar 2s ease-in-out forwards';
+                }
+            });
+        }
+
+        window.addEventListener('scroll', animateSkillBars);
+
+        // Project Card Hover Effects
+        const projectCards = document.querySelectorAll('.project-card');
+        projectCards.forEach(card => {
+            card.addEventListener('mouseenter', () => {
+                card.style.transform = 'translateY(-15px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = 'translateY(0) scale(1)';
+            });
+        });
+
+        // Navbar Background on Scroll
+        window.addEventListener('scroll', () => {
+            const navbar = document.getElementById('navbar');
+            if (window.scrollY > 50) {
+                navbar.style.background = 'rgba(15, 15, 15, 0.98)';
+            } else {
+                navbar.style.background = 'rgba(15, 15, 15, 0.95)';
+            }
+        });
+
+        // Form Input Animations
+        const formControls = document.querySelectorAll('.form-control');
+        formControls.forEach(input => {
+            input.addEventListener('focus', () => {
+                input.style.transform = 'scale(1.02)';
+                input.style.borderColor = 'var(--primary-color)';
+            });
+            
+            input.addEventListener('blur', () => {
+                input.style.transform = 'scale(1)';
+            });
+        });
+
+        // Initialize animations on load
+        document.addEventListener('DOMContentLoaded', () => {
+            // Add any initialization code here
+            setTimeout(() => {
+                document.body.classList.add('loaded');
+            }, 100);
+        });
+
+        // Social Media Links (add your actual social media URLs)
+        const socialLinks = document.querySelectorAll('.social-link');
+        const socialUrls = {
+            'fa-linkedin-in': 'https://linkedin.com/in/johndoe',
+            'fa-github': 'https://github.com/johndoe',
+            'fa-twitter': 'https://twitter.com/johndoe',
+            'fa-instagram': 'https://instagram.com/johndoe'
+        };
+
+        socialLinks.forEach(link => {
+            const icon = link.querySelector('i').classList[1];
+            if (socialUrls[icon]) {
+                link.href = socialUrls[icon];
+                link.target = '_blank';
+                link.rel = 'noopener noreferrer';
+            }
+        });
+
+        // Add click analytics (optional)
+        document.querySelectorAll('a, button').forEach(element => {
+            element.addEventListener('click', (e) => {
+                // Add analytics tracking here if needed
+                console.log('Clicked:', e.target.textContent || e.target.title);
+            });
+        });
+    </script>
+</body>
+</html>

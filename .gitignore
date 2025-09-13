@@ -1,0 +1,5 @@
+# Ignore the img folder
+img/
+
+# Ignore PDF files
+*.pdf
