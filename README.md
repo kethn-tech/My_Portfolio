@@ -2,25 +2,6 @@
 
 *A personal portfolio showcasing my journey as a BCA student and aspiring full-stack developer at **KLE Technological University.***
 
----
-
-## 🌐 Live Demo
-# Coffee
-**Live Video:** *(https://res.cloudinary.com/datfhmdzv/video/upload/Screen_Recording_2025-09-16_002419_nkvp7t.mp4)*
-
-# Art
-**Live Video:** *(https://res.cloudinary.com/datfhmdzv/video/upload/Screen_Recording_2025-09-16_002513_q234th.mp4)*
-
-# ZoGo
-**Live Video:** *(https://res.cloudinary.com/datfhmdzv/video/upload/Screen_Recording_2025-09-16_002631_mcd8ad.mp4)*
-
-# Chairs
-**Live Video:** *(https://res.cloudinary.com/datfhmdzv/video/upload/Screen_Recording_2025-09-16_002711_cawfah.mp4)*
-
-# Barber
-**Live Video:** *(https://res.cloudinary.com/datfhmdzv/video/upload/Screen_Recording_2025-09-16_002745_baximp.mp4)*
-
----
 
 ## 🚀 About
 
