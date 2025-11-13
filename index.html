@@ -1,426 +1,926 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8" />
-    <title>Kethan Ayatti – Portfolio</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="styles.css">
-    </head>
-    
-    <body>
-        <!-- Enhanced Loader -->
-        <div id="loader" class="loader-overlay">
-            <div class="loader-content">
-                <!-- Background particles -->
-                <div class="loader-particles">
-                    <div class="particle particle-1"></div>
-                    <div class="particle particle-2"></div>
-                    <div class="particle particle-3"></div>
-                    <div class="particle particle-4"></div>
-                    <div class="particle particle-5"></div>
-                </div>
-            <!-- Main loader -->
-            <div class="loader-main">
-                <div class="loader-logo">
-                    <div class="logo-text">KASTUDIO</div>
-                    <div class="logo-glow"></div>
-                </div>
-                <div class="loader-tagline">
-                    Crafting innovative solutions as a fresher in Full Stack Development & Cyber Security
-                </div>
-                <!-- Progress bar -->
-                <div class="progress-container">
-                    <div class="progress-bar">
-                        <div class="progress-fill" id="progressFill"></div>
-                    </div>
-                    <div class="progress-text" id="progressText">0%</div>
-                </div>
-                <!-- Loading dots -->
-                <div class="loading-dots">
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                    <div class="dot"></div>
-                </div>
-                </div>
-            <!-- Gradient orbs -->
-            <div class="gradient-orb orb-1"></div>
-            <div class="gradient-orb orb-2"></div>
-            </div>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Cloud Security Engineer (BCA Student)</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/my-avatar.png" alt="Ketan Ayatti" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Ketan Ayatti">Ketan Ayatti</h1>
+
+          <p class="title">Aspiring Cloud Security Engineer</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
             </div>
 
-    <!-- Header -->
-    <header id="header">
-        <div class="header-container">
-            <div class="logo">KASTUDIO</div>
-            <nav class="nav-desktop">
-                <ul>
-                    <li><a href="#hero" class="nav-link active">Home</a></li>
-                    <li><a href="#about" class="nav-link">About</a></li>
-                    <li><a href="#education" class="nav-link">Education</a></li>
-                    <li><a href="#skills" class="nav-link">Skills</a></li>
-                    <li><a href="#projects" class="nav-link">Projects</a></li>
-                    <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-            </nav>
-            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle menu">
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-                <span class="hamburger-line"></span>
-            </button>
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a href="mailto:kethanayatti333@gmail.com" class="contact-link">kethanayatti333@gmail.com</a>
             </div>
-        <!-- Mobile Navigation -->
-        <nav class="nav-mobile" id="mobileNav">
-            <ul>
-                <li><a href="#hero" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#education" class="nav-link">Education</a></li>
-                <li><a href="#skills" class="nav-link">Skills</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-        </nav>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a href="tel:+918073009117" class="contact-link">+91 8073009117</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Hubballi-Dharwad, Karnataka, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="https://github.com/kethn-tech" class="social-link" target="_blank">
+              <ion-icon name="logo-github"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="https://linkedin.com/in/kethanayatti" class="social-link" target="_blank">
+              <ion-icon name="logo-linkedin"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Portfolio</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Blog</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
         </header>
 
-    <main>
-        <!-- Hero Section -->
-        <section id="hero" class="hero-section">
-            <div class="hero-bg">
-                <div class="hero-circle"></div>
-            </div>
-            <div class="hero-particles">
-                <div class="hero-particle particle-1"></div>
-                <div class="hero-particle particle-2"></div>
-                <div class="hero-particle particle-3"></div>
-            </div>
-            <div class="hero-content">
-                <div class="hero-avatar">
-                    <img src="https://res.cloudinary.com/datfhmdzv/image/upload/profile-images/6846a64863f03272880b2477.jpg"
-                        alt="Kethan Ayatti" />
-                </div>
-                <h1 class="hero-title">Kethan Ayatti</h1>
-                <div class="hero-typewriter">
-                    <span id="typewriter">Fresher in Software Development and Cyber Security</span>
-                    <span class="cursor">|</span>
-                </div>
-                <p class="hero-description">
-                    Building secure, real-time web and AI solutions for the modern era.
+        <section class="about-text">
+          <p>
+            I'm an aspiring Cloud Security Engineer with a strong foundation in MERN stack development and hands-on experience in cloud deployment. I specialize in designing, building, and protecting secure cloud-native infrastructure using AWS, OCI, and modern DevOps practices.
+          </p>
+
+          <p>
+            My expertise spans full-stack development, containerization with Docker, and cloud security implementation. I'm passionate about creating scalable, secure solutions while applying best practices in cybersecurity, data protection, and infrastructure automation. Currently pursuing a BCA degree with focus on cloud computing and security.
+          </p>
+        </section>
+
+
+        <!--
+          - service
+        -->
+
+        <section class="service">
+
+          <h3 class="h3 service-title">What I'm doing</h3>
+
+          <ul class="service-list">
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-design.svg" alt="cloud security icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Cloud Security</h4>
+
+                <p class="service-item-text">
+                  Designing and implementing secure cloud infrastructure on AWS and Azure platforms.
                 </p>
-                <div class="hero-buttons">
-                    <a href="#projects" class="btn btn-primary">View Projects</a>
-                    <a href="#contact" class="btn btn-secondary">Get in Touch</a>
-                </div>
-            </div>
-        </section>
-<!-- About Section -->
-<section id="about" class="about-section">
-    <div class="container">
-        <h2 class="section-title">About Me</h2>
-                <div class="about-card">
-                    <div class="about-image">
-                        <img src="https://res.cloudinary.com/datfhmdzv/image/upload/profile-images/6846a64863f03272880b2477.jpg"
-                            alt="Kethan Ayatti" />
-                    </div>
-                    <div class="about-content">
-                        <h3 class="about-name">Kethan Ayatti</h3>
-                        <h4 class="about-title">Web Development & Cyber Security Enthusiast</h4>
-                        
-                        <p class="about-text">
-                            Emerging BCA student with hands-on MERN stack and GenAI expertise, seeking to leverage
-                            cybersecurity knowledge and full-stack development skills to build Secure, Reliable -
-                            Innovative solutions in a dynamic technology environment.
-                            <br><br>
-                            My focus: crafting seamless, secure digital experiences with the
-                            latest in <span class="highlight">Web Development, GEN AI, and Cyber Security</span>.
-                            </p>
-                        <div class="skill-badges">
-                            <span class="badge">MERN Stack</span>
-                            <span class="badge">Socket.io</span>
-                            <span class="badge">Python/ML</span>
-                            <span class="badge">DevOps</span>
-                            <span class="badge">AI Projects</span>
-                        </div>
-                        <blockquote class="quote">
-                            <i class="fas fa-quote-left quote-icon"></i>
-                            <p>My favorite projects are those that solve real problems and push technology forward, ethically.</p>
-                        </blockquote>
-                    </div>
-                </div>
-            </div>
-        </section>
-<!-- Education Section -->
-<section id="education" class="education-section">
-    <div class="container">
-        <h2 class="section-title">Education</h2>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3 class="timeline-title">BCA (Pursuing)</h3>
-                            <h4 class="timeline-institution">KLE Technological University, BVB Campus</h4>
-                            <p class="timeline-period">2023–Present</p>
-                            <p class="timeline-description">
-                                Specializing in Java, DevOps, Machine Learning, Big Data Analytics, and Cyber Security.
-                                Active in team projects and real-time app dev.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3 class="timeline-title">Pre-University Course</h3>
-                            <h4 class="timeline-institution">KLE College of Commerce</h4>
-                            <p class="timeline-period">2021–2023</p>
-                            <p class="timeline-description">
-                                Built a math/commerce base. Excelled in analytics, critical thinking, and extra-curriculars.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-dot"></div>
-                        <div class="timeline-content">
-                            <h3 class="timeline-title">Secondary Education</h3>
-                            <h4 class="timeline-institution">SBIOAES School</h4>
-                            <p class="timeline-period">2011–2021</p>
-                            <p class="timeline-description">
-                                Academic excellence with leadership and sporting achievements (Chess).
-                            </p>
-                        </div>
-                    </div>
-                    </div>
-                    </div>
-                    </section>
-<!-- Skills Section -->
-<section id="skills" class="skills-section">
-    <div class="container">
-        <h2 class="section-title">Skills & Technologies</h2>
-                
-                <div class="skills-grid">
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fab fa-react"></i>
-                        </div>
-                        <h3 class="skill-name">React / Vite</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="90"></div>
-                        </div>
-                        <span class="skill-percentage">90%</span>
-                        </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fab fa-node-js"></i>
-                        </div>
-                        <h3 class="skill-name">Node.js, Express</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="85"></div>
-                        </div>
-                        <span class="skill-percentage">85%</span>
-                        </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fas fa-database"></i>
-                        </div>
-                        <h3 class="skill-name">MongoDB, SQL</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="83"></div>
-                        </div>
-                        <span class="skill-percentage">83%</span>
-                        </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fab fa-js"></i>
-                        </div>
-                        <h3 class="skill-name">JavaScript</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="93"></div>
-                        </div>
-                        <span class="skill-percentage">93%</span>
-                        </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fab fa-python"></i>
-                        </div>
-                        <h3 class="skill-name">Python / ML</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="81"></div>
-                        </div>
-                        <span class="skill-percentage">81%</span>
-                        </div>
-                    <div class="skill-card">
-                        <div class="skill-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <h3 class="skill-name">Cyber Security</h3>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-width="74"></div>
-                        </div>
-                        <span class="skill-percentage">74%</span>
-                        </div>
-                        </div>
-                        </div>
-                        </section>
-<!-- Projects Section -->
-<section id="projects" class="projects-section">
-    <div class="container">
-        <h2 class="section-title">Featured Projects</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://res.cloudinary.com/datfhmdzv/image/upload/image_copy_4_ydp5tw.png"
-                                alt="Real-Time Chat Platform" />
-                        </div>
-                        
-                        <div class="project-content">
-                            <h3 class="project-title">Real-Time Chat Platform</h3>
-                            <p class="project-description">
-                                Secure real-time community chat with file sharing, end-to-end encryption, and AI moderation.
-                                Fast, scalable MERN microservices.
-                            </p>
-                            
-                            <div class="project-tags">
-                                <span class="tag">React</span>
-                                <span class="tag">Socket.io</span>
-                                <span class="tag">Node.js</span>
-                                </div>
-                            
-                            <div class="project-links">
-                                <a href="#" class="btn btn-small btn-primary">
-                                    <i class="fas fa-external-link-alt"></i>
-                                    Demo
-                                </a>
-                                <a href="https://github.com/kethn-tech/Techtalke.git" class="btn btn-small btn-secondary" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                    GitHub
-                                </a>
-                                </div>
-                                </div>
-                                </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://res.cloudinary.com/datfhmdzv/image/upload/image_copy_5_hnh9ft.png" alt="AI Powered Chatbot" />
-                        </div>
-                        
-                        <div class="project-content">
-                            <h3 class="project-title">AI Powered Chatbot</h3>
-                            <p class="project-description">
-                                NLP chatbot built for real conversations. Intent detection, context-aware reply, and live
-                                deployment with Docker.
-                            </p>
-                            
-                            <div class="project-tags">
-                                <span class="tag">Python</span>
-                                <span class="tag">TensorFlow</span>
-                                <span class="tag">API</span>
-                                </div>
-                            
-                            <div class="project-links">
-                                <a href="#" class="btn btn-small btn-primary">
-                                    <i class="fas fa-external-link-alt"></i>
-                                    Demo
-                                </a>
-                                <a href="https://github.com/kethn-tech/Chatzy.git" class="btn btn-small btn-secondary" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                    GitHub
-                                </a>
-                                </div>
-                                </div>
-                                </div>
-                    <div class="project-card">
-                        <div class="project-image">
-                            <img src="https://res.cloudinary.com/datfhmdzv/image/upload/image_copy_6_rnpghp.png" alt="Static Web Pages" />
-                        </div>
-                        
-                        <div class="project-content">
-                            <h3 class="project-title">Static Web Pages</h3>
-                            <p class="project-description">
-                                Static Web Pages using Master HTML, CSS and JavaScript.
-                            </p>
-                            
-                            <div class="project-tags">
-                                <span class="tag">HTML</span>
-                                <span class="tag">CSS</span>
-                                <span class="tag">JavaScript</span>
-                                </div>
-                            
-                            <div class="project-links">
-                                <a href="#" class="btn btn-small btn-primary">
-                                    <i class="fas fa-external-link-alt"></i>
-                                    Demo
-                                </a>
-                                <a href="https://github.com/kethn-tech/Static_Website-.git" class="btn btn-small btn-secondary" target="_blank">
-                                    <i class="fab fa-github"></i>
-                                    GitHub
-                                </a>
-                                </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-<!-- Contact Section -->
-<section id="contact" class="contact-section">
-    <div class="container">
-        <h2 class="section-title">Contact</h2>
-                
-                <div class="contact-card">
-                    <div class="contact-social">
-                        <a href="https://github.com/kethn-tech" class="social-link" target="_blank" aria-label="GitHub">
-                            <i class="fab fa-github"></i>
-                        </a>
-                        <a href="https://www.linkedin.com/in/kethanayatti/" class="social-link" target="_blank" aria-label="LinkedIn">
-                            <i class="fab fa-linkedin"></i>
-                        </a>
-                        </div>
-                        
-                        <form class="contact-form" id="contactForm">
-                            <div class="form-group">
-                                <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
-                                <label for="name" class="form-label">Your Name</label>
-                            </div>
-                        
-                            <div class="form-group">
-                                <input type="email" id="email" name="email" class="form-input" placeholder="Your Email" required>
-                                <label for="email" class="form-label">Your Email</label>
-                            </div>
-                        
-                            <div class="form-group">
-                                <textarea id="message" name="message" class="form-input" placeholder="Your Message" rows="5"
-                                    required></textarea>
-                                <label for="message" class="form-label">Your Message</label>
-                            </div>
-                        <button type="submit" class="btn btn-primary btn-full">
-                            <i class="fas fa-paper-plane"></i>
-                            Send Message
-                        </button>
-                        </form>
-                </div>
-            </div>
-        </section>
-    </main>
+              </div>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-brand">KethanAyatti</div>
-    
-                <div class="footer-social">
-                    <a href="https://github.com/kethn-tech" class="footer-social-link" target="_blank" aria-label="GitHub">
-                        <i class="fab fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/kethanayatti/" class="footer-social-link" target="_blank"
-                        aria-label="LinkedIn">
-                        <i class="fab fa-linkedin"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2025 Kethan Ayatti. All rights reserved.</p>
-            </div>
-            </div>
-    </footer>
+            </li>
 
-    <script src="script.js"></script>
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-dev.svg" alt="security audit icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Web Development</h4>
+
+                <p class="service-item-text">
+                  Building responsive and secure web applications using the MERN stack (MongoDB, Express, React, Node.js).
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-app.svg" alt="infrastructure icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">Network Security</h4>
+
+                <p class="service-item-text">
+                  Implementing network security measures, including firewalls, intrusion detection systems, and access control.
+                </p>
+              </div>
+
+            </li>
+
+            <li class="service-item">
+
+              <div class="service-icon-box">
+                <img src="./assets/images/icon-photo.svg" alt="threat analysis icon" width="40">
+              </div>
+
+              <div class="service-content-box">
+                <h4 class="h4 service-item-title">DevSecOps</h4>
+
+                <p class="service-item-text">
+                  Integrating security practices into the DevOps pipeline for continuous security monitoring.
+                </p>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials
+        -->
+
+        <section class="testimonials">
+
+          <h3 class="h3 testimonials-title">Certifications</h3>
+
+          <ul class="testimonials-list has-scrollbar">
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                  <img src="https://www.oracle.com/asset/web/favicons/favicon.ico" alt="Oracle Logo" class="cert-logo" style="width: 60px; height: 60px; flex-shrink: 0;">
+                  <h4 class="h4 testimonials-item-title" data-testimonials-title style="margin: 0;">Cloud Infrastructure AI Foundations</h4>
+                </div>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Oracle University | Certified in OCI cloud infrastructure and AI fundamentals.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                  <img src="https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png" alt="AWS Logo" class="cert-logo" style="width: 60px; height: 36px; flex-shrink: 0;">
+                  <h4 class="h4 testimonials-item-title" data-testimonials-title style="margin: 0;">Cloud Practitioner Essentials</h4>
+                </div>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Amazon Web Services | AWS cloud fundamentals, services, and infrastructure basics.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                  <img src="https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png" alt="AWS Logo" class="cert-logo" style="width: 60px; height: 36px; flex-shrink: 0;">
+                  <h4 class="h4 testimonials-item-title" data-testimonials-title style="margin: 0;">Advanced CloudFormation Macros</h4>
+                </div>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Amazon Web Services | Advanced infrastructure-as-code techniques using CloudFormation.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                  <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/IBM_logo.svg" alt="IBM Logo" class="cert-logo" style="width: 60px; height: 60px; flex-shrink: 0;">
+                  <h4 class="h4 testimonials-item-title" data-testimonials-title style="margin: 0;">Cyber Security Fundamentals</h4>
+                </div>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    IBM SkillsBuild | Core cybersecurity concepts and threat protection strategies.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                  <img src="https://a0.awsstatic.com/libra-css/images/logos/aws_logo_smile_1200x630.png" alt="AWS Logo" class="cert-logo" style="width: 60px; height: 36px; flex-shrink: 0;">
+                  <h4 class="h4 testimonials-item-title" data-testimonials-title style="margin: 0;">Generative AI with Diffusion Models</h4>
+                </div>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Amazon Web Services | Generative AI and machine learning implementation using diffusion models.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                  <img src="https://seeklogo.com/images/P/palo-alto-networks-logo-280916A0D4-seeklogo.com.png" alt="Palo Alto Networks Logo" class="cert-logo" style="width: 60px; height: 60px; flex-shrink: 0;">
+                  <h4 class="h4 testimonials-item-title" data-testimonials-title style="margin: 0;">Certified Security Service Edge Engineer</h4>
+                </div>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Palo Alto Networks | In Progress (Expected January 2026) - Enterprise security and edge computing certification.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+                <div style="display: flex; align-items: center; gap: 15px; margin-bottom: 15px;">
+                  <img src="https://cdn.worldvectorlogo.com/logos/udemy-1.svg" alt="Udemy Logo" class="cert-logo" style="width: 60px; height: 60px; flex-shrink: 0;">
+                  <h4 class="h4 testimonials-item-title" data-testimonials-title style="margin: 0;">Web Development Masterclass - Online</h4>
+                </div>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Udemy | Web Development Masterclass by YouAccel Training (26 total hours) - Completed August 23, 2024.
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Oracle Certification" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Oracle Certified Cloud Infrastructure AI Foundations</h4>
+
+              <time datetime="2025-09-01">September 2025</time>
+
+              <div data-modal-text>
+                <p>
+                  Certified in Oracle Cloud Infrastructure with specialized knowledge in AI foundations. Demonstrates expertise in cloud infrastructure design and AI implementation on OCI platform.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+        <!--
+          - Technology & Tools
+        -->
+
+        <section class="clients">
+
+          <h3 class="h3 clients-title">Technology & Tools</h3>
+
+          <ul class="clients-list has-scrollbar">
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" alt="Node.js logo" style="width: 80px; height: 80px; object-fit: contain;">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg" alt="React logo" style="width: 80px; height: 80px; object-fit: contain;">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original.svg" alt="MongoDB logo" style="width: 80px; height: 80px; object-fit: contain;">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg" alt="Express logo" style="width: 80px; height: 80px; object-fit: contain;">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="https://cdn.worldvectorlogo.com/logos/docker.svg" alt="Docker logo" style="width: 80px; height: 80px; object-fit: contain;">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="https://cdn.worldvectorlogo.com/logos/java.svg" alt="Java logo" style="width: 80px; height: 80px; object-fit: contain;">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg" alt="Kali Linux logo" style="width: 80px; height: 80px; object-fit: contain;">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="https://cdn.worldvectorlogo.com/logos/github-icon-2.svg" alt="GitHub logo" style="width: 80px; height: 80px; object-fit: contain;">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="https://cdn.worldvectorlogo.com/logos/git-icon.svg" alt="Git logo" style="width: 80px; height: 80px; object-fit: contain;">
+              </a>
+            </li>
+
+            <li class="clients-item">
+              <a href="#">
+                <img src="https://cdn.worldvectorlogo.com/logos/python-5.svg" alt="Python logo" style="width: 80px; height: 80px; object-fit: contain;">
+              </a>
+            </li>
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Bachelor of Computer Applications (BCA)</h4>
+
+              <span>2023 — Present</span>
+
+              <p class="timeline-text">
+                Pursuing BCA degree with specialization in Cloud Computing and Cybersecurity. Coursework includes network security, cryptography, and cloud architecture.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"> KLE College of Commerce(12th)</h4>
+
+              <span>2021 — 2023</span>
+
+              <p class="timeline-text">
+              
+                Completed commerce background student with a passion for technology. Started learning programming languages and exploring opportunities in the IT field.
+              </p>
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">State Bank of India Officers' Association Education Society English Medium School(10th)</h4>
+
+              <span>2011 — 2021</span>
+
+              <p class="timeline-text">
+                Completed secondary education with excellent performance in mathematics, science, and computer fundamentals.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+              <h5 class="h5">Languages</h5>
+              <p>JavaScript (Intermediate), Java (Intermediate), Python (Basics), C++/C</p>
+            </li>
+
+            <li class="skills-item">
+              <h5 class="h5">Web Technologies</h5>
+              <p>MERN Stack (Intermediate), RESTful APIs (Intermediate), Socket.io, HTML5 & CSS3</p>
+            </li>
+
+            <li class="skills-item">
+              <h5 class="h5">Databases</h5>
+              <p>MongoDB (Intermediate), MySQL (Basics)</p>
+            </li>
+
+            <li class="skills-item">
+              <h5 class="h5">Developer Tools</h5>
+              <p>Git/GitHub, VS Code, Docker, Vercel, Railway</p>
+            </li>
+
+            <li class="skills-item">
+              <h5 class="h5">Cloud, Security & DevOps</h5>
+              <p>AWS, OCI, Docker, Terraform (Basic), Network Security, CI/CD with GitHub Actions</p>
+            </li>
+
+            <li class="skills-item">
+              <h5 class="h5">AI Tools</h5>
+              <p>Perplexity</p>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #PORTFOLIO
+      -->
+
+      <article class="portfolio" data-page="portfolio">
+
+        <header>
+          <h2 class="h2 article-title">Portfolio</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Web Development</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Web Development</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul class="project-list">
+
+            <li class="project-item  active" data-filter-item data-category="Web Development">
+              <a href="https://github.com/kethn-tech/Techtalke.git" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-1.jpg" alt="Tech Talke" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Tech Talke - Community Platform</h3>
+
+                <p class="project-category">Web Development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Web Development">
+              <a href="https://github.com/kethn-tech/Chatzy.git" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-2.png" alt="Chatzy" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Chatzy - AI Chatbot Assistant</h3>
+
+                <p class="project-category">Web Development</p>
+
+              </a>
+            </li>
+
+            <li class="project-item  active" data-filter-item data-category="Web Development">
+              <a href="https://github.com/kethn-tech/My-Portfolio.git" target="_blank">
+
+                <figure class="project-img">
+                  <div class="project-item-icon-box">
+                    <ion-icon name="eye-outline"></ion-icon>
+                  </div>
+
+                  <img src="./assets/images/project-3.jpg" alt="Personal Portfolio" loading="lazy">
+                </figure>
+
+                <h3 class="project-title">Personal Portfolio Website</h3>
+
+                <p class="project-category">Web Development</p>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #BLOG
+      -->
+
+      <article class="blog" data-page="blog">
+
+        <header>
+          <h2 class="h2 article-title">Blog</h2>
+        </header>
+
+        <section class="blog-posts">
+
+          <ul class="blog-posts-list">
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800&h=400&fit=crop" alt="Cloud Security Best Practices" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Cloud Security</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2025-11-10">Nov 10, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Building Secure Cloud Infrastructure with AWS</h3>
+
+                  <p class="blog-text">
+                    Essential practices for implementing IAM policies, encryption, and VPC configurations in AWS.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800&h=400&fit=crop" alt="MERN Stack Development" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">Web Development</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2025-10-15">Oct 15, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">MERN Stack: Building Modern Web Applications</h3>
+
+                  <p class="blog-text">
+                    Complete guide to building scalable, secure web applications with MongoDB, Express, React, and Node.js.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+            <li class="blog-post-item">
+              <a href="#">
+
+                <figure class="blog-banner-box">
+                  <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=400&fit=crop" alt="Docker & Containerization" loading="lazy">
+                </figure>
+
+                <div class="blog-content">
+
+                  <div class="blog-meta">
+                    <p class="blog-category">DevOps</p>
+
+                    <span class="dot"></span>
+
+                    <time datetime="2025-09-20">Sep 20, 2025</time>
+                  </div>
+
+                  <h3 class="h3 blog-item-title">Containerization with Docker: Getting Started</h3>
+
+                  <p class="blog-text">
+                    Practical guide to containerizing applications and deploying them efficiently using Docker.
+                  </p>
+
+                </div>
+
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+
+      </article>
+
+
+
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3804.4545!2d75.3393!3d15.3017!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb8945e1fcbf7dd%3A0x1f1f1f1f1f1f1f1f!2sHubballi%2C%20Karnataka%2C%20India!5e0!3m2!1sen!2sin!4v1647608789441!5m2!1sen!2sin"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="send"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
 </body>
+
 </html>
